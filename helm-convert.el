@@ -302,3 +302,6 @@
            (or (read-from-minibuffer "Unit Value: ") (throw 'no-input "no input"))
            ))
       (helm-convert-unit-display value-unit (helm-convert-units value-unit (read-from-minibuffer (concat value-unit " ->: ")))))))
+
+(provide 'helm-convert)
+;;; helm-convert.el ends here
